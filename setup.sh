@@ -25,16 +25,16 @@ fi
 # Copy example files to user directory
 if [[ ! -d ../models ]]; then
   echo "copying model files..."
-  rsync --info=progress2 -r /mnt/gluster/shares/WP2_Analysis/WP2_models/Kimmel/LeafSegmentor_data/models ..
+  #rsync --info=progress2 -r /mnt/gluster/shares/WP2_Analysis/WP2_models/Kimmel/LeafSegmentor_data/models ..
 fi
 
 if [[ ! -d ../cut_jobs ]]; then
   echo "copying example cut jobs..."
-  rsync --info=progress2 -r /mnt/gluster/shares/WP2_Analysis/WP2_models/Kimmel/LeafSegmentor_data/cut_jobs ..
+  #rsync --info=progress2 -r /mnt/gluster/shares/WP2_Analysis/WP2_models/Kimmel/LeafSegmentor_data/cut_jobs ..
 fi
 
 if [[ ! -d ../datasets ]]; then
   echo "copying example files for train and inference"
   mkdir ../datasets
-  rsync --info=progress2 -r /mnt/gluster/shares/WP2_Analysis/WP2_models/Kimmel/LeafSegmentor_data/dataset/examples ../datasets/.
+  #rsync --info=progress2 -r /mnt/gluster/shares/WP2_Analysis/WP2_models/Kimmel/LeafSegmentor_data/dataset/examples ../datasets/.
 fi
